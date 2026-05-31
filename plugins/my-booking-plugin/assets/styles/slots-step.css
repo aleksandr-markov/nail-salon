@@ -1,0 +1,41 @@
+.slots-wrapper {
+  margin-top: 12px;
+  padding: 4px;
+}
+
+.slots-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 8px !important;
+}
+
+.slot-btn {
+  background: #ffffff;
+  border: 1px solid rgba(43, 17, 21, 0.2);
+  color: #2b1115;
+  padding: 8px 4px !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.slot-btn:hover:not(:disabled) {
+  border-color: #7b2e4c;
+  background: rgba(255, 0, 127, 0.05);
+}
+
+.slot-btn.selected {
+  background: #7b2e4c !important;
+  color: #fff !important;
+  border-color: #7b2e4c !important;
+}
+
+.slot-btn:disabled {
+  opacity: 0.4;
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.3);
+  cursor: not-allowed;
+}

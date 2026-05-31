@@ -1,0 +1,45 @@
+.wizard-next-btn,
+.wizard-submit-btn {
+  width: 100%;
+  padding: 16px;
+  background: #7b2e4c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.wizard-next-btn:disabled {
+  background: #e0d4d5;
+  color: #a69899;
+  cursor: not-allowed;
+}
+
+.wizard-next-btn:not(:disabled):hover,
+.wizard-submit-btn:hover {
+  background: #a37c7e;
+}
+
+.wizard-nav-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.wizard-back-btn {
+  background: none;
+  border: 1px solid #b99395;
+  color: #b99395;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.wizard-back-btn:hover {
+  background: #f3e6e6;
+}

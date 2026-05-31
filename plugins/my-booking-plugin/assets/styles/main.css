@@ -1,0 +1,7 @@
+/* main.css */
+@import url("variables.css");
+@import url("booking-card.css");
+@import url("buttons.css");
+@import url("services-step.css");
+@import url("calendar-step.css");
+@import url("slots-step.css");

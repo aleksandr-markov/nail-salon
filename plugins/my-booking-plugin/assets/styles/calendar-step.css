@@ -1,0 +1,98 @@
+.custom-calendar {
+  width: 100%;
+  margin: 0 auto 12px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  color: #2b1115; 
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.calendar-month-title {
+  font-size: 1.1rem !important;
+  font-weight: 700;
+  margin: 0 !important;
+  color: #2b1115 !important;
+  text-transform: capitalize;
+}
+
+.calendar-nav-btn {
+  background: transparent;
+  border: 1px solid rgba(43, 17, 21, 0.2);
+  color: #2b1115;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.calendar-nav-btn:hover {
+  background: rgba(43, 17, 21, 0.1);
+}
+
+.calendar-weekdays {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr) !important;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: rgba(43, 17, 21, 0.7);
+  margin-bottom: 8px;
+}
+
+.calendar-days-grid {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr) !important;
+  gap: 4px !important;
+}
+
+.calendar-day-btn {
+  width: 32px !important;
+  height: 32px !important;
+  background: transparent;
+  border: none;
+  color: #2b1115 !important;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 50% !important;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+.calendar-day-btn:hover:not(:disabled) {
+  background: rgba(255, 0, 127, 0.15) !important;
+}
+
+.calendar-day-btn.selected {
+  background: #7b2e4c !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(255, 0, 127, 0.4);
+}
+
+.calendar-day-btn:disabled {
+  color: rgba(43, 17, 21, 0.25) !important;
+  cursor: not-allowed;
+  background: transparent !important;
+  text-decoration: line-through;
+}
+
+.calendar-day-btn.day-off {
+  color: rgba(239, 68, 68, 0.4) !important;
+}
